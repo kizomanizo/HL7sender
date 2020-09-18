@@ -15,7 +15,7 @@ module.exports = {
                     middlename: getClientMiddlename(),
                     lastname: getClientLastname(),
                     othername: getClientOthername(),
-                    uln: getOtherIds(), 
+                    uln: getOtherIds(),
                     national_id: getNidaIds(),
                     voter_id: getVoterIds(),
                     dl_id: getDlNumber(),
@@ -80,45 +80,84 @@ function getClientFirstname() {
     const firstNames = [
         'Amina', 'Lucy', 'Susan', 'Tausi', 'Neema', 'Mussa', 'Baraka', 'John', 'Vivian',
         'Joseph', 'Peter', 'Mohamed', 'Abdul', 'Isack', 'Celestine', 'Cosmas',
-        'Ayubu', 'Paul', 'Winnie', 'Dativa', 'Zaynab', 'Grace', 'Erick', 'Jafari',
+        'Ayubu', 'Paul', 'Winnie', 'Dativa', 'Zaynab', 'Grace', 'Erick', 'Jafari', 'Anna',
+        'James', 'Janet', 'Amanda', 'Majuma', 'Mwanhamisi', 'Kessy', 'Anastazia', 'Leonard', 'Josephat',
+        'Hamidu', 'Hamada', 'Wema', 'Abdul', 'Shabani', 'Castrol', 'Fareed', 'Farida', 'Ester', 'Edger',
+        'Stephen', 'Lence', 'Venance', 'Abdallah', 'Shabili', 'Iddi', 'Shabani', 'Adrian', 'Andrew', 'Adre',
+        'Betty', 'Beatrice', 'Farouk', 'Freddy', 'Alfayo', 'Jeremiah', 'Onesmo', 'Gobless', 'Winfrida', 'Winnie',
+        'Wilfred', 'Ismail', 'Badria', 'Vicent', 'Vincent', 'Peter', 'Christina', 'Samwel', 'Anania', 'Justin', 'Masha',
+        'Mariam', 'Prisca', 'Pascal', 'Amani', 'Agricola', 'Scola', 'Scolastica', 'Angel', 'Pius', 'Monalisa', 'Yvvone',
+        'Cherry', 'Tunu', 'Teddy', 'Randy', 'Willy', 'William', 'Winston', 'Terry', 'Marco', 'Esther', 'Alfayo', 'Zakayo',
+        'Zebedayo', 'Patricia', 'Alice', 'Aaron', 'Abayomi', 'Abena', ' Abiola', ' Ada',
+        ' Adah', ' Adana', ' Adanna', ' Adanya', ' Ade', ' Adeben', ' Alika', ' Ama', ' Amadi',
+        ' Amai', ' Amare', ' Amarey', ' Amari', ' Ami', ' Amina', ' Aren', ' Asha', ' Azibo',
+        ' Bahati', ' Bibsbebem', ' Binah', ' Binta', ' Bisa', ' Bobo', ' Bolanle', ' Bunme',
+        ' Chiamaka', 'Chibale', 'Chidi', 'Chike', 'Dakarai', 'Dalia', 'Davu', 'Deka', 'Ekon', 'Eshe',
+        'Fabumi', 'Falala', 'Fayola', 'Feechi', 'Haji', 'Hakizimana', 'Hamidi', 'Hamisi', 'Hasani',
+        'Hasina', 'Idi', 'Iman', 'Imani', 'Iniko', 'Isabis', 'Isoke', 'Issa', 'Jaafan', 'Jabari', 'Jabarl',
+        'Jabir', 'Jafari', 'Jahi', 'Jameelah', 'Jamila', 'Jamilah', 'Jamilia', 'Jamilla'
+
+
     ];
-    return firstNames[getRandomIndex(firstNames.length -1)];
+    return firstNames[getRandomIndex(firstNames.length - 1)];
 }
 
 function getClientMiddlename() {
     const middleNames = [
         'Mawazo', 'Juma', 'Ali', 'John', 'Joseph', 'Sauli', 'Amon',
         'Ahmed', 'Abdallah', 'Patrick', 'Sosthenes', 'Marko', 'Peter',
-        'Baraka', 'Musa', 'Kheri', 'Mfugale',
+        'Baraka', 'Musa', 'Kheri', 'Mfugale', 'Mazige', 'Maliki', 'Khalfan',
+        'Jumanne', 'Amoni', 'Amina', 'Amandusi', 'Jackson', 'Joshua', 'Jimmy',
+        'Andrea', 'John', 'Fransis', 'Hassan', 'Bakari', 'Michael', 'Mazoa',
+        'Antiphas', 'Minja', 'Adnani', 'Peter', 'Paul', 'Pania', 'Jamal', 'Aziz',
+        'Ally', 'Alphani', 'Anania', 'Muba', 'Barouk', 'David', 'Daudi', 'Damas',
+        'Dangio', 'Daniel', 'Daruoshi', 'Dona', 'Hassanali', 'Masanja', 'Masanga',
+        'Dubwisha', 'Mahfudhi', 'Tamimu'
     ];
-    return  middleNames[getRandomIndex(middleNames.length -1)];
+    return middleNames[getRandomIndex(middleNames.length - 1)];
 }
 
 function getClientLastname() {
     const lastNames = [
         'Chale', 'Ally', 'Iddi', 'Maangwatay', 'Mabusi', 'Bagumhe', 'Tlatla', 'Quang', 'Boya',
         'Juma', 'Alfayo', 'Slaa', 'Tluway', 'Boay', 'Slegeray', 'Kulle', 'Maleyeck',
-        'Fisoo', 'Sulle', 'Burra', 'Baha', 'Matle', 'Kizito',
+        'Fisoo', 'Sulle', 'Burra', 'Baha', 'Matle', 'Kizito', 'Mwipao', 'Mazige', 'Mavunde',
+        'Chilu', 'Majubwa', 'Semfuko', 'Senkumbo', 'Mangusho', 'Sarumbo', 'Mashauli', 'Mfikwa',
+        'Kolombo', 'Senkonje', 'Kabula', 'Kisaka', 'Mbwilo', 'Maziku', 'Lugola', 'Gebo', 'Marusu', 'Shayo',
+        'Swai', 'Kakele', 'Kakolozya', 'Bijampola', 'Msambwa', 'Mchuchi', 'Gayo', 'Bayo', 'Kayombo', 'Maromboso',
+        'Swaleh', 'Abdulwahid', 'Mageni', 'Hugolin', 'Magoti', 'Kisengo', 'Sengoda', 'Senyoni', 'Koleleni', 'Yunge',
+        'Kanisio', 'Mashiku', 'Matacha', 'Machite', 'Masasi', 'Machumi', 'Magingo', 'Lema', 'Mwankenja', 'Mwamafupa',
+        'Darusho', 'Membe', 'Yongolo', 'Nyange', 'Festo', 'Macha', 'Kumalija', 'Komba', 'Manyanda', 'Kanani', 'Maganga',
+        'Nyambabe', 'Chuwa', 'Shuma', 'Mabala', 'Kangala', 'Mazengo', 'Malebo', 'Msisi', 'Bulino', 'Majura', 'Sloan', 'Makamba',
+        'Malinda', 'Shabani', 'Iddi', 'Kisina', 'Abdallah', 'Mbelwa', 'Mwija', 'Mwinjuma', 'Mwaya', 'Malima', 'Kisawaga', 'Chesko',
+        'Ngwanga', 'Tesha', 'Manongi', 'Matera', 'Henerico', 'Maafudhi', 'Almafazy', 'Kimaro', 'Mukulu', 'Minde', 'Mozele', 'Kikoti',
+        'Nzobonaliba', 'Kaniki', 'Pawasa', 'Majuto', 'Matonya', 'Khan', 'Kumwembe', 'Mushi', 'Moshi', 'Chibalonza', 'Mbasha', 'Mchomvu',
+        'Mazinde', 'Tenywa', 'Chambua', 'Kadama', 'Muba', 'Obama', 'Kikwete', 'Nyerere', 'Kambarage', 'Kakaya', 'Pinda', 'Mizengo', 'Kayanza',
+        'Hameed', 'Mkawa', 'Mfugale', 'Malafyale', 'Mwakyembe', 'Mwaitege', 'Lupakisyo', 'Zupe', 'Kangi', 'Madyane', 'Mzige', 'Ndaki',
+        'Patuka', 'Chaula', 'Ilakoze', 'Chambuso', 'Msigwa', 'Mwailupe', 'Chengula', 'Mobeto'
     ];
-    return lastNames[getRandomIndex(lastNames.length -1)];
+    return lastNames[getRandomIndex(lastNames.length - 1)];
 }
 
 function getClientOthername() {
     const otherNames = [
         'Papaa', 'Faru', 'Chalii', 'Oyaoya', 'Amsha', 'Mishe', 'Bumunda', 'Maprosoo', 'Kisu', 'Mangi', 'Chief',
         'Samatta', 'Drogba', 'Mkali', 'Ticha', 'Bob', 'Ras', 'Dogo', 'Kadogoo',
-        'Fundi', 'P-Funk', 'Majani', 'Kijiti', 'Mafegi', 'Janjaro',
+        'Fundi', 'P-Funk', 'Majani', 'Kijiti', 'Mafegi', 'Janjaro', 'Dokta', 'White',
+        'Jeshi', 'Nunda', 'Master', 'Kitale', 'Zungu', 'Mtu M-bad', 'Kitebo', 'Rasta', 'Mkushi',
+        'Wachila', 'Jizzo', 'Mwarabu', 'Zingo', 'Chogo', 'Bichwa', 'Msauzi', 'Mnyamwezi', 'Mwiba', 'Yugale',
+        'Wasape', 'Mang\'ati', 'Mangi', 'Manka', 'Mgogo', 'Simba', 'Mamba', 'Nikki', 'Nico', 'Chidi', 'Majani', 'Pilato'
     ];
-    return otherNames[getRandomIndex(otherNames.length -1)];
+    return otherNames[getRandomIndex(otherNames.length - 1)];
 }
 
 function getBirthRegions() {
     const regions = [
         'Arusha', 'Dar es Salaam', 'Dodoma', 'Geita', 'Iringa', 'Kagera', 'Katavi', 'Kilimanjaro', 'Kigoma', 'Lindi',
         'Manyara', 'Mara', 'Mbeya', 'Morogoro', 'Mtwara', 'Mwanza', 'Njombe', 'Pemba', 'Pwani', 'Rukwa', 'Ruvuma',
-        'Shinyanga', 'Simiyu', 'Singida', 'Tabora', 'Tanga', 'Unguja',
+        'Shinyanga', 'Simiyu', 'Singida', 'Tabora', 'Tanga', 'Unguja', 'Pemba'
     ];
-    return regions[getRandomIndex(regions.length -1)];
+    return regions[getRandomIndex(regions.length - 1)];
 }
 
 function getRegions() {
@@ -126,7 +165,7 @@ function getRegions() {
         'Arusha',
         'Manyara',
     ];
-    return regions[getRandomIndex(regions.length -1)];
+    return regions[getRandomIndex(regions.length - 1)];
 }
 
 function getCouncils() {
@@ -138,7 +177,7 @@ function getCouncils() {
         'Kiteto',
         'Mbulu',
     ];
-    return councils[getRandomIndex(councils.length -1)];
+    return councils[getRandomIndex(councils.length - 1)];
 }
 
 function getWards() {
@@ -151,7 +190,7 @@ function getWards() {
         'Emboret', 'Endiamtu', 'Komolo', 'Mererani', 'Naberera', 'Orkesumet', 'Terrat',
     ];
 
-    return wards[getRandomIndex(wards.length -1)];
+    return wards[getRandomIndex(wards.length - 1)];
 }
 
 function getHamlets() {
@@ -159,7 +198,7 @@ function getHamlets() {
         'Endachini', 'Maqatay', 'Sokoni', 'Mjini Kati', 'Toroka Uje', 'Nyamahoma',
         'Maweni', 'Tutani', 'Mpepo', 'Mvumo', 'Kivulini', 'Tulivu',
     ];
-    return hamlets[getRandomIndex(hamlets.length -1)];
+    return hamlets[getRandomIndex(hamlets.length - 1)];
 }
 
 function getVillages() {
@@ -167,7 +206,7 @@ function getVillages() {
         'Endagichang', 'Dabil', 'Taptap', 'Ubwegeni', 'Mwenge', 'Mapambano', 'Mlinganyo', 'Gidabudash', 'Qorro', 'Aqweso', 'Qoroda',
         'Qameyu', 'Qorro', 'Tutlat', 'Barabarani', 'Mwisho', 'Mpungani', 'Pilau', 'Chuini', 'Robayambao', 'Mtambowagongo',
     ]
-    return villages[getRandomIndex(villages.length -1)];
+    return villages[getRandomIndex(villages.length - 1)];
 }
 
 function getRandomPhonePrefix() {
@@ -180,9 +219,9 @@ function getRandomPhonePrefix() {
         '0653',
         '0755',
     ];
-    return prefixes[getRandomIndex(prefixes.length -1)] !== 'undefined' ? prefixes[getRandomIndex(prefixes.length -1)]
-    : 
-    getRandomPhonePrefix();
+    return prefixes[getRandomIndex(prefixes.length - 1)] !== 'undefined' ? prefixes[getRandomIndex(prefixes.length - 1)]
+        :
+        getRandomPhonePrefix();
 }
 
 function getRandomPhoneSuffix() {
