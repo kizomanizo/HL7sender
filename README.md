@@ -18,7 +18,7 @@ To run the application follow the following steps.
 
 ### Post-install use ###
 You will see a list of all clients in your database that you can now push to the defined HL7 server in the controllers. To change the destination, change the port and the IP addess in controllers/client.js to whatever IP and port you prefer.
-1. Go to your browser and access `localhost:4001/clients`
+1. Go to your browser and access `localhost:4000/clients`
 2. Click More on the left side of any client's details to view more detailed information
 3. In the information page, there is a button for sending each client to the NHCR. Use that!
 4. To do a bulk sendng of clients, use the link in the top side of CLIENTS page to push all of them (NOTE: That can take a while!).
